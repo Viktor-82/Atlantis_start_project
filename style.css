@@ -1,0 +1,123 @@
+body {
+    position: relative;
+    margin: 0;
+    background: #575478;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    max-width: 88%;
+    min-height: 1080px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.hamburger {
+    position: absolute;
+    top: 39px;
+    right: 20px;
+    visibility: hidden;
+    width: 36px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background: #FFFFFF;
+}
+.title {
+    font-size: 1vw;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 38.688rem;
+}
+.descr {
+    font-size: 3vw;
+    line-height: 58px;
+    margin-top: 40px;
+    max-width: 1130px;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 40px 0;
+}
+address {
+    font-size: 1vw;
+    line-height: 29px;
+    font-style: normal;
+    width: 511px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    width: 100%;
+    height: 240px;
+    background: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        min-height: 81%;
+    }
+    .container .title {
+        font-size: 2vw;
+        margin-top: 61.2%;
+    }
+    .container .descr {
+        font-size: 4vw;
+    }
+    .container address {
+        font-size: 2vw;
+        max-width: 496px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container .logo {
+        max-width: 400px;
+    }
+    .container .logo img {
+        width: 100%;
+    }
+    .container address {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container .logo {
+        width: 45px;
+    }
+    .container .logo img {
+        width: 100%;
+    }
+    .container .hamburger {
+        max-width: 20.938rem;
+        visibility: visible;
+    }
+    .container .title {
+        font-size: 4vw;
+        line-height: 14px;
+        /* В media 1024 прописал min-heigth в % чтобы был плавный переход при уменьшении экрана
+        поэтому настройку ниже закоментировал */
+        /*margin-top: 397px;*/
+    }
+    .container .descr {
+        font-size: 6vw;
+        line-height: 28px;
+        margin-top: 32px;
+    }
+    .container .divider {
+        margin: 32px 0;
+    }
+    .container address {
+        width: 335px;
+        font-size: 4vw;
+        line-height: 17;
+    }
+}
